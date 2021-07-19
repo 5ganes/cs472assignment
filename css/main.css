@@ -56,7 +56,7 @@ section{
     margin: 1% 0% 1% 5%;
 }
 .sidebar ul li a{
-    display: block; padding: 4% 0% 4% 2%; text-decoration: none; color: #01002a;
+    display: block; padding: 2% 2% 2%; text-decoration: none; color: #01002a;
     background: linear-gradient(45deg, lightblue, lightgreen);
 }
 .sidebar ul li a:hover{
@@ -76,6 +76,21 @@ section{
 
 }
 
+@media screen and (max-width : 600px) {
+    section{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 98%; padding: 1%;
+    }
+    .main-container{
+        width: 98%; padding: 1%;
+    }
+    .main-container .welcome .welcome-title{
+        padding: 3%;;
+    }
+}
+
 
 
 footer{
@@ -86,4 +101,13 @@ footer .validator-block{
 }
 footer .copyright-block{
     width: 50%; text-align: right;
+}
+
+@media screen and (max-width : 600px) {
+    footer{
+        flex-direction: column;
+    }
+    footer .validator-block, footer .copyright-block{
+        width: 100%; text-align: center;
+    }
 }
